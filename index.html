@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portal Salote - projeto progressivo de Front-end"
+    />
+    <title>Portal Salote | Semana 15</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">PS</span>
+        <div>
+          <strong>Portal Salote</strong><small>Acesso e serviços escolares</small>
+        </div>
+      </div>
+      <span class="week-pill week-pill--s15">Semana 15</span>
+    </header>
+
+    <div class="page-grid">
+      <aside class="sidebar" aria-label="Navegação do projeto">
+        <nav>
+          <a href="#inicio">Visão geral</a><a href="#estudantes">Estudantes</a
+          ><a href="#historico">Histórico</a>
+        </nav>
+        <div class="reference-box">
+          <strong>Trecho em estudo</strong>
+          <span class="lesson-tag lesson-tag--s15">S15</span>
+          <small>Consulte o PDF indicado no guia.</small>
+        </div>
+      </aside>
+
+       <main id="conteudo">
+        <section class="hero" id="inicio">
+          <div>
+            <span class="eyebrow">Projeto progressivo • 3º bimestre</span>
+            <h1>Controle escolar claro, rápido e responsivo.</h1>
+            <p>
+              Uma interface educacional para praticar conteúdos dos PDFs de Front-end
+              sem coletar dados biométricos reais.
+            </p>
+          </div>
+          <div class="hero-status">
+            <span>Hoje</span><strong id="current-date">Carregando...</strong
+            ><small id="current-time">--:--</small>
+          </div>
+        </section>
+
+
+        <section class="metrics" aria-label="Resumo do dia">
+<article class="metric-card">
+            <span>Estudantes</span><strong id="metric-students">0</strong
+            ><small>cadastrados na demonstração</small>
+          </article>
+          <article class="metric-card">
+            <span>Presentes</span><strong id="metric-present">0</strong
+            ><small>acessos confirmados</small>
+          </article>
+          <article class="metric-card">
+            <span>Pendentes</span><strong id="metric-pending">0</strong
+            ><small>aguardando entrada</small>
+          </article>
+        </section>
+
+
+        <section class="panel" id="estudantes" aria-labelledby="titulo-estudantes">
+          <div class="section-heading">
+            <div>
+              <span class="lesson-tag lesson-tag--s15">S15A1</span>
+              <h2 id="titulo-estudantes">Estudantes da turma</h2>
+            </div>
+            <label class="search-field"
+              ><span class="sr-only">Pesquisar estudante</span
+              ><input
+                id="student-search"
+                type="search"
+                placeholder="Pesquisar por nome ou código"
+            /></label>
+          </div>
+          <!-- [S15A1] Os cartões abaixo são organizados com CSS Grid. -->
+          <div id="student-list" class="student-grid"></div>
+        </section>
+
+
+        <section class="panel" id="historico" aria-labelledby="titulo-historico">
+          <div class="section-heading">
+            <div>
+              <span class="lesson-tag lesson-tag--s15">S15A3</span>
+              <h2 id="titulo-historico">Histórico recente</h2>
+            </div>
+          </div>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Horário</th>
+                  <th>Estudante</th>
+                  <th>Código</th>
+                  <th>Situação</th>
+                </tr>
+              </thead>
+              <tbody id="history-body"></tbody>
+            </table>
+          </div>
+        </section>
+
+
+        <section class="legend" aria-label="Legenda de referências">
+          <strong>Cores do aprendizado:</strong>
+          <span class="lesson-tag lesson-tag--s15">Semana 15</span>
+          <span class="lesson-tag lesson-tag--s16">Semana 16</span>
+          <span class="lesson-tag lesson-tag--s17">Semana 17</span>
+          <span class="lesson-tag lesson-tag--s18">Semana 18</span>
+        </section>
+      </main>
+    </div>
+
+
+    <footer>
+      <p>
+        Projeto educacional com nomes e códigos fictícios. Substitua a turma somente
+        depois de receber a lista oficial.
+      </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
